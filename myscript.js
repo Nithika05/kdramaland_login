@@ -7,3 +7,4 @@ function fun_log() {
     window.location.href = "index.html";
     alert("Login Successful")
 }
+

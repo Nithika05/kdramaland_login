@@ -104,7 +104,7 @@ header {
     /* background-color: #1c1b1b; */
     background-color: #000000;
     padding: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .set:hover {
