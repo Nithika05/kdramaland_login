@@ -1,0 +1,150 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    flex-wrap: wrap;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.heading img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.heading h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: cornflowerblue;
+}
+
+/* Navigation Links */
+.type {
+    display: flex;
+    gap: 20px;
+}
+
+.type a,
+.about a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.type a:hover, .about a:hover {
+    color: rgb(91, 136, 220);
+}
+
+/* Search and Buttons */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#search {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+}
+
+#submit {
+    color: white;
+    background-color: rgb(52, 116, 234);
+    padding: 10px;
+    width: 90px;
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(154, 185, 241);
+    color: black;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.set {
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    /* background-color: #2a2929; */
+    /* background-color: #1c1b1b; */
+    background-color: #000000;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.set:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 0px rgb(227, 222, 220);
+}
+
+.set img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.set h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .set {
+        width: 90%;
+    }
+}
